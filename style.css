@@ -1,0 +1,112 @@
+html    {
+font-size: 62.5%;
+width: 100%;
+/* overflow-x: hidden; 
+overflow-y: hidden; */
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(244, 247, 248);
+    margin: 0;
+    display: grid;
+}
+
+.side-left{
+    position: fixed;
+    background-color: rgba(31, 57, 67, 1);
+    text-align: center;
+    margin-left: 2vw;
+    right: 1;
+    width: 16vw;
+    height: 100vw;
+    z-index: 1;
+    li{
+        color: #F4ECDD;
+    }
+}
+
+#side-furthest-left{
+    position: fixed;
+    z-index: 2;
+    background-color:#1A3038 ;
+    width: 2vw;
+    height: 100vw;
+    right: 1;
+}
+.main{
+    background-color: rgba(40, 75, 87, 1);
+    height: 100vw;
+    /* width: 77vw; */
+    width: 63vw;
+    margin-left: 13vw;
+
+    
+    
+}
+#box-1{
+    text-align: center;
+    width: 11vw;
+    height: 20vw;
+    gap: 50px, 50px;
+}
+#box-2{
+    text-align: center;
+    width: 22vw;
+    height: 8vw;
+    gap: 50px, 50px;
+    
+}
+#box-3{
+    text-align: center;
+    width: 11vw;
+    height: 30vw;
+    margin-left: 0vw;
+    margin-bottom: 20vw;
+}
+
+.inner-content
+{
+    background-color: #D2CABA;
+    color: black;
+}
+.large-text{
+    font-size: 50px;
+}
+
+
+#hamburger_container{
+    .burger{
+        border-bottom: 1rem solid black;
+    }
+    
+}
+
+.panel {
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #F4ECDD;
+    color: black;
+}
+.blue-panel {
+    border-radius: 40px;
+    padding: 16px;
+    box-sizing: border-box;
+    background: lightskyblue;
+    color: black;
+}
+.panel--transparent {
+    background: rgba(0,0,0,0.2);
+    color: white;
+}
+
+.center-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
