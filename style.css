@@ -70,7 +70,7 @@ body {
     text-align: center;
     width: 19vw;
     height: 50.3vh;
-    position: absolute;
+        position: absolute;
     left: 36.5%;
     top: 49.5%;
     }
@@ -81,8 +81,9 @@ body {
     position: absolute;
     display: flex;
     flex-direction: column;
-    row-gap: 20vh;
-
+    row-gap: 10%;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     left: 69%;
     top: 0.5%;
@@ -90,9 +91,9 @@ body {
         .box-3-Content{
            position: relative;
            background-color: #D6CDBD;
-            width: 15vw;
-            height: auto;
-            /* margin: auto; */
+            width: 12vw;
+            height: 12vw;
+            margin: 9vh;
             border-radius: 15px;
             display: flex;
             flex-direction: column;
@@ -156,7 +157,7 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.6rem;
     margin: 11px 0;
     cursor: pointer;
     border: none;
@@ -169,6 +170,15 @@ body {
 }
 .slightlybiggertext{
     font-size: 3rem;
+}
+#emailphoneclass{
+    display: flex;
+    margin: auto;
+}
+.emailandphone{
+    font-size: 2rem;
+    display: flex;
+
 }
 .biggertext{font-size: 2rem;}
 

@@ -1,92 +1,128 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
-    <title>form</title>
-    </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap"
+    rel="stylesheet"
+  />
+  <title>form</title>
+</head>
 <body>
-        <div class="side-left">
+  <div class="side-left">
+    <span>
+      <li class="large-text" data-highlight="true">
+        <div id="hamburger_container">
+          <span class="burger">menu</span>
+          <span class="burger">hiiiiii</span>
+          <span class="burger">hiiiiii</span>
+        </div>
 
-        <span>
-            <li class="large-text" data-highlight="true">
-                <div id="hamburger_container">
-                    <span class="burger">menu</span>
-                    <span class="burger">hiiiiii</span>
-                    <span class="burger">hiiiiii</span>
-                </div>
+        menu
+      </li>
+      <li>aa</li>
+      <li>a1</li>
+      <li>a2</li>
+    </span>
+  </div>
+  <div id="side-furthest-left"></div>
 
-                menu
-            </li>
-            <li>aa</li>
-            <li>a1</li>
-            <li>a2</li>
-        </span>
+  <div class="main">
+    <div id="box-1" class="panel">box1</div>
+    <div id="box-2" class="panel">box2</div>
+
+    <div id="box-3" class="panel">
+      <form id="contact-form">
+        <div class="box-3-Content gap">
+          <label for="name" class="jersey-20 slightlybiggertext moveaway"
+            >-Name-</label
+          >
+          <input
+            class="input"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          />
+
+          <label for="gender" class="jersey-20 slightlybiggertext gap move"
+            >Gender</label
+          >
+          <select class="input moveaway" id="gender" name="gender">
+            <option value="">Select</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+          </select>
+        </div>
+        <div class="box-3-Content gap">
+          <label for="email" class="jersey-20 slightlybiggertext"
+            >=Email | Phone=</label
+          >
+          <input
+            class="input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+
+          <label for="newsletter">click4newsletter:</label>
+          <input
+            type="checkbox"
+            id="newsletter"
+            name="newsletter"
+            value="yes"
+          />
+
+          <label for="contact-method" class="jersey-20 biggertext"
+            >+Preferred contact method+</label
+          >
+         
+          <div id="emailphoneclass">
+             <label for="email-radio" class="jersey-20 emailandphone">email</label>
+            <input
+              type="radio"
+              id="email-radio"
+              name="contact-method"
+              value="email"
+            />
+            <label for="phone-radio" class="jersey-20 emailandphone"
+              >phone</label
+            >
+            <input
+              type="radio"
+              id="phone-radio"
+              name="contact-method"
+              value="phone"
+            />
+          </div>
+        </div>
+        <div class="box-3-Content gap">
+          <label for="message" class="jersey-20 slightlybiggertext"
+            >=-Message-=</label
+          >
+          <textarea
+            class="input"
+            id="message"
+            name="message"
+            placeholder="type urm essage"
+          ></textarea>
+
+          <button type="submit" class="cta-button">Send Message</button>
+        </div>
+      </form>
     </div>
-<div id="side-furthest-left"></div>
-
-    <div class="main">
-        
-        <div id="box-1" class="panel">box1
-
-
-        </div>
-        <div id="box-2" class="panel">box2</div>
-
-        <div id="box-3" class="panel">box3
-            <form id="contact-form">
-                <div class="box-3-Content gap"> 
-                         <label for="name" class="jersey-20 slightlybiggertext moveaway">-Name-</label>
-                         <input class="input" type="text" id="name" name="name" placeholder="Enter your name">
-                         
-                         <label for="gender" class="jersey-20 slightlybiggertext gap move">Gender</label>
-                         <select class="input moveaway" id="gender" name="gender">
-                             <option value="">Select</option>
-                             <option value="male">male</option>
-                             <option value="female">female</option>
-                             <option value="other">other</option>
-                    </select>
-                </div>
-                <div class="box-3-Content gap">
-                        <label for="email" class="jersey-20 slightlybiggertext">=Email | Phone=</label>
-                        <input class="input" type="email" id="email" name="email" placeholder="Enter your email">
-
-                        <label for="newsletter">click4newsletter:</label>
-                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
-
-                        <label for="contact-method" class="jersey-20 biggertext moveaway">+Preferred contact method+</label>
-                            <label for="email-radio" class="jersey-20 slightlybiggertext">email</label>
-
-                        <input type="radio" id="email-radio" name="contact-method" value="email">
-                            <label for="phone-radio" class="jersey-20 slightlybiggertext">phone</label>
-                        <input type="radio" id="phone-radio" name="contact-method" value="phone">
-                </div>
-                <div class="box-3-Content gap">
-                       <label for="message" class="jersey-20 slightlybiggertext">=-Message-=</label>
-                       <textarea class="input" id="message" name="message" placeholder="type urm essage"></textarea>
-                       
-                       <button type="submit" class="cta-button">Send Message</button>
-                </div>
-            </form>
-        </div>
-
+  </div>
+  <div class="side-right">
+    <div id="box-1-TitleBox">
+      box1
+      <div id="box-1-innerPattern">inner</div>
     </div>
-    <div class="side-right">
-        <div id="box-1-TitleBox"> box1
-                <div id="box-1-innerPattern">inner</div>     
-
-        </div>
-        <div id="box-2-TitleBox"> box2
-   
-        </div>
-        <div id="box-3-TitleBox"> box3 </div>
-
-
-
-
-    </div>
-
+    <div id="box-2-TitleBox">box2</div>
+    <div id="box-3-TitleBox">box3</div>
+  </div>
 </body>
