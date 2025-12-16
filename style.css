@@ -1,3 +1,10 @@
+.jersey-20 {
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 html    {
 font-size: 62.5%;
 width: 100%;
@@ -14,64 +21,172 @@ body {
     margin: 0;
     display: grid;
 }
-
+/*left*/
 .side-left{
     position: fixed;
     background-color: rgba(31, 57, 67, 1);
     text-align: center;
-    margin-left: 2vw;
+    margin-left: 2.5vw;
     right: 1;
     width: 16vw;
-    height: 100vw;
+    height: 100vh;
     z-index: 1;
     li{
         color: #F4ECDD;
     }
 }
 
-#side-furthest-left{
+    #side-furthest-left{
     position: fixed;
     z-index: 2;
     background-color:#1A3038 ;
-    width: 2vw;
-    height: 100vw;
+    width: 2.5vw;
+    height: 100vh;
     right: 1;
 }
+/*main*/
 .main{
+    
     background-color: rgba(40, 75, 87, 1);
-    height: 100vw;
+    height: 100vh;
     /* width: 77vw; */
     width: 63vw;
-    margin-left: 13vw;
+    margin-left: 18vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    position: relative;
+} 
 
-    
-    
-}
-#box-1{
+    #box-1{
     text-align: center;
-    width: 11vw;
-    height: 20vw;
-    gap: 50px, 50px;
-}
-#box-2{
+    width: 39vw;
+    height: 26vh;
+    position: absolute;
+    left: 4.5%;
+    top: 21%;
+    }
+    #box-2{
     text-align: center;
-    width: 22vw;
-    height: 8vw;
-    gap: 50px, 50px;
-    
-}
-#box-3{
+    width: 19vw;
+    height: 50.3vh;
+    position: absolute;
+    left: 36.5%;
+    top: 49.5%;
+    }
+    #box-3{
     text-align: center;
-    width: 11vw;
-    height: 30vw;
-    margin-left: 0vw;
-    margin-bottom: 20vw;
+    width: 18vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20vh;
+
+    margin: auto;
+    left: 69%;
+    top: 0.5%;
+    }
+        .box-3-Content{
+           position: relative;
+           background-color: #D6CDBD;
+            width: 15vw;
+            height: auto;
+            /* margin: auto; */
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+        }
+        .downslight{
+
+        
+            
+        }
+        #box-3-Content3{
+           
+            
+        }
+/*right*/
+.side-right {
+    position: absolute;
+    background-color: rgb(40, 75, 87, 1);
+    margin-left: 81vw;
+    width: 19vw;
+    height: 100vh;
 }
 
-.inner-content
+    #box-1-TitleBox{
+        background-color: #254551;
+        position: absolute;
+        width: 9vw;
+        height: 48.6vh;
+        left:10vw ;
+    }
+    #box-1-innerPattern{
+        background-color: #1E3943;
+        position: absolute;
+        bottom: 3vh;
+        width: 9vw;
+        height: 2vh;
+    }
+    #box-2-TitleBox{
+        background-color: #254551;
+        position: absolute; 
+        width: 9vw;
+        height: 61vh;
+        left:-0.5vw ;
+        top: 15vh;
+    }
+    #box-3-TitleBox{
+        background-color: #254551;
+        
+        position: absolute;
+        width: 9vw;
+        height: 40.8vh;
+        left:10vw ;
+        bottom: 0vh;
+    }
+/* components */
+.cta-button {
+    background-color: #F4ECDD;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 11px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #254551;
+}
+.slightlybiggertext{
+    font-size: 3rem;
+}
+.biggertext{font-size: 2rem;}
+
+.moveaway{
+        display: inline-block;
+    margin: 10px 0;
+
+}
+.inner-content[type=text]
 {
-    background-color: #D2CABA;
-    color: black;
+    position: relative;
+    height: 5vw;
+    width: 7vw;
+    padding: 12px;
+    margin: auto;
+
+    background-color: black
+    color( white);
 }
 .large-text{
     font-size: 50px;
