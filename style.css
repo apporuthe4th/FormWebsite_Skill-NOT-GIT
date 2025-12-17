@@ -90,6 +90,25 @@ body {
   left: 4.5%;
   top: 21%;
 }
+#box-1-content{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 6.5vw;
+  height:6.5vw;
+
+}
+
+#box-1-inner-ui1{
+
+
+}
+
+#box-1-inner-ui2{
+
+  
+}
 #box-2 {
   z-index: 2;
   text-align: center;
@@ -114,22 +133,22 @@ body {
   left: 69%;
   top: 0.5%;
 }
-.box-3-Content {
-  position: relative;
-  background-color: #d6cdbd;
-  width: 12vw;
-  height: 12vw;
-  margin: 9vh;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 20px;
-}
-.downslight {
-}
-#box-3-Content3 {
-}
+  .box-3-Content {
+    position: relative;
+    background-color: #d6cdbd;
+    width: 12vw;
+    height: 12vw;
+    margin: 9vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  .downslight {
+  }
+  #box-3-Content3 {
+  }
 /*right*/
 .side-right {
   position: absolute;
@@ -256,6 +275,16 @@ body {
   .burger {
     border-bottom: 1rem solid black;
   }
+}
+/* REUSEABLE PANELS */
+.inner-panel
+{
+  background-color: #d6cdbd;
+  border-radius: 12px;
+  padding:12px;
+  box-sizing: border-box;
+  color: black;
+
 }
 
 .panel {
