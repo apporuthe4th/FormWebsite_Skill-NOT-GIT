@@ -7,10 +7,10 @@
 
 html    {
 font-size: 62.5%;
-width: 100%;
-/* overflow-x: hidden; 
-overflow-y: hidden; */
-}
+width: 100%; 
+/* overflow-x: hidden;  */
+overflow-y: hidden;
+} 
 
 *{
     scroll-behavior: smooth;
@@ -46,7 +46,6 @@ body {
 }
 /*main*/
 .main{
-    
     background-color: rgba(40, 75, 87, 1);
     height: 100vh;
     /* width: 77vw; */
@@ -57,8 +56,35 @@ body {
     grid-template-rows: repeat(3, 1fr);
     position: relative;
 } 
+#teylersBG{
+    position: absolute;
+    opacity: 7%;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.grids{
+    position: absolute;
+    z-index: 0;
+    opacity: 31%;
+}
+#halfgrid1{
+    width:42vw;
+}
+#fullgrid1{
+    z-index: 0;
+    width: 50vw;
+    right: 00vw;
+    bottom: -10vh;
+    height: 790px;
+    object-fit: contain;
+
+}
 
     #box-1{
+    z-index: 2;
     text-align: center;
     width: 39vw;
     height: 26vh;
@@ -67,14 +93,16 @@ body {
     top: 21%;
     }
     #box-2{
+        z-index: 2;
     text-align: center;
     width: 19vw;
     height: 50.3vh;
-        position: absolute;
+    position: absolute;
     left: 36.5%;
     top: 49.5%;
     }
     #box-3{
+        z-index: 2;
     text-align: center;
     width: 18vw;
     height: 100vh;
@@ -98,7 +126,7 @@ body {
             display: flex;
             flex-direction: column;
             gap: 10px;
-            padding: 10px;
+            padding: 20px;
         }
         .downslight{
 
@@ -199,7 +227,7 @@ body {
     color( white);
 }
 .large-text{
-    font-size: 50px;
+    font-size: 5rem;
 }
 
 
