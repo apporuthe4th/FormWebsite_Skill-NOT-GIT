@@ -1,0 +1,338 @@
+@media (max-width: 375px) {
+    .title {
+        font-size: clamp(8rem, 35vw, 22vw);
+    }
+  
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: clamp(20rem, 35vw, 22vw);
+    }
+}
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: clamp(40rem, 35vw, 22vw);
+    }
+}
+
+/* klein*/
+@media (max-width: 480px) {
+    header {
+        height: 30vh;
+        align-items: center;
+        padding: 0.5rem 1rem;
+    }
+    .title {
+        font-size: clamp(2.2rem, 14vw, 8rem);
+        line-height: 1;
+        top: 0;
+    }
+    .list-topright {
+        right: .5rem;
+        top: .5rem;
+        font-size: .9rem;
+    }
+    .spotify-embed iframe {
+        height: 360px;
+    }
+    .box-hobbys { font-size: 14px; }
+}
+
+/* medium */
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        height: 35vh;
+        padding: 0.75rem 1rem;
+    }
+    .title {
+        font-size: clamp(3rem, 10vw, 12rem);
+        top: 0;
+    }
+    .list-topright {
+        right: 1rem;
+        top: 1rem;
+    }
+    .spotify-embed iframe {
+        height: 420px;
+    }
+    .box-muziek, .box-hobbys { width: 95%; }
+}
+
+/* large */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        height: 40vh;
+    }
+    .title {
+        font-size: clamp(20rem, 9vw, 15rem);
+    }
+    .spotify-embed iframe {
+        height: 480px;
+    }
+}
+
+/* desktopljlkn;lkml;mmmmmmm */
+@media (min-width: 1025px) {
+    header { height: 50vh; }
+    .title { font-size: clamp(22rem, 10vw, 20vw); top: 0; }
+    .spotify-embed iframe { height: 500px; }
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+*{
+    scroll-behavior: smooth;
+}
+.center-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+body{
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+    background-color: lightskyblue;
+    color: white;
+}
+header{
+height: 50vh;
+background-color: rgba(0, 0, 0, 0.075);
+display: flex;
+background-image: url(image/halftonewebpwhite.webp);
+    
+align-items: flex-start;
+
+}
+.title {
+    text-align: left;
+ 
+    margin: 0;
+    color: white;
+    top: -900px;
+}
+.list-topright {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0,0,0,0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    list-style: none;
+    z-index: 100;
+    max-width: calc(100% - 2rem);
+}
+.list-topright ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.75rem;
+}
+.list-topright a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.undertitle {
+    text-align: center;
+    font-size: clamp(1.5rem, 20vw, 10vw);
+    margin-top: -50px;
+    margin-bottom: 20px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.box-intro {
+    
+    font-family: "roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color: lightskyblue;
+    color: white;
+
+    text-align: center;
+    border-radius: 15px;
+ 
+    background: rgba(0,0,0,0.2);
+    font-size: 20px;
+
+     
+
+
+}
+
+
+
+
+
+.flex-container {
+    font-family: "roboto", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    background-color: lightskyblue;
+    color: white;
+    display: flex;
+    gap: 15px;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+
+}
+
+.box-muziek {
+    font-family: "roboto", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 80vw;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.BRAINHURTY {
+     font-family: "roboto", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    background-color: rgb(53, 88, 109);
+    color: white;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.long-panel{
+    box-sizing: border-box;
+
+
+}
+.panel {
+    border-radius: 10px;
+    padding: 16px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.135);
+    color: black;
+}
+.panel--transparent {
+    background: rgba(0,0,0,0.2);
+    color: white;
+}
+.flex-container > * {
+color: white;
+    width: min(1100px, 95%);
+
+}
+
+.fuck {
+justify-content: center;
+text-align: center;
+flex-direction: row;
+padding: 20px;
+box-sizing: border-box;
+}
+
+
+.box-hobbys {
+    max-width: 800px;
+    margin: 20px auto;
+    width: 90vw;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    text-align: center;
+    font-size: 1.1vw;
+
+
+
+}
+.pagebox {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 20px;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: black;
+    width: 100%;
+
+}
+.spotify-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; 
+    width: 100%;
+
+    padding: 30px 10px;
+    flex-wrap: wrap;
+}
+
+.spotify-embed {
+        flex: 1 1 320px; 
+        max-width: 700px;
+        min-width: 260px;
+        height: auto;
+        margin: auto;
+        display: block;
+}
+
+
+.embed1,
+.embed2 {
+    margin: 0;
+}
+
+
+.spotify-embed iframe {
+    width: 100% !important;
+    height: 500px; 
+    display: block;
+}
+
+
+.footer {
+    text-align: bottom;
+    margin-top: 20px;
+    font-size: 14px;
+    flex-flow: row wrap;
+    color: white;
+    position:sticky;
+    background-color: black;
+}
+
+.footer-list {
+    background: rgba(0, 0, 0, 0.365);
+    padding: 1rem;
+    color: white;
+}
+.footer-list ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0.5rem 0;
+}
+.footer a:hover {
+text-decoration: underline;
+
+}

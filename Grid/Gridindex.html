@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="Gridstyle.css" />
+    <title>GRID</title>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="div1 border_radius30 header dex2">
+            <div class="inside_mhf">
+                <div id="FormTitle "> Formulier  
+                    <!-- <div class="textsizeX align-start padding10 textcolorBlack"id="part1_form">Name</div>
+                    <div class="textsizeX align-start padding10 textcolorBlack"id="part2_form">Email</div>
+                    <div class="textsizeX align-start padding10 textcolorBlack"id="part3_form">Message</div> -->
+                </div>
+            </div>
+
+        </div>
+        <div class="div2 border_radius30 main dex2"> 
+            <div class="inside_mhf">
+                <input type="text" id="pokemonName" placeholder="TYPE SNOM BEST BOY">
+                        <button onclick="fetchData()">Fetch Pokemon</button><br>
+    
+    <img src="" alt="Pokemon Sprite"class="animate__animated animate__jello animate__infinite infinite" id="pokemonSprite" style="display: none">
+    
+    <script src="index.js"></script>
+
+
+
+
+            </div>
+
+        </div>
+        <div class="div3 border_radius30 footer dex2">
+            <div class="inside_mhf">stopwatch</div>
+            
+        </div>
+        <div class="div4topright dex3 "> <button class="textsizeXX opacity30" id="OldButton" href="https://40541.hosts2.ma-cloud.nl/HMTL/H2-FormWebsite/index.html  ">OLDPAGE</button></div>
+        <img class="dex1" id="halfgrid1" src="image\halfwiped grid.png" alt="halfwiped grid">
+        <img class="dex1" id="fullgrid1" src="image\Grid Pattern.png" alt=" grid">
+
+    </div>
+         <img class="BackgroundIMG dex0" src="image\mylifeisalie.jpg" alt="HEREBACKGROUND">
+         
+        
+       
+</body>
+<script>
+
+async function fetchData(){
+
+    try{
+
+        const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+
+
+        if(!response.ok){
+            throw new Error("Could not fetch resource");
+        }
+
+        const data = await response.json();
+        const pokemonSprite = data.sprites.front_default;
+        const imgElement = document.getElementById("pokemonSprite");
+
+        imgElement.src = pokemonSprite;
+        imgElement.style.display = "block";
+    }
+    catch(error){
+        console.error(error);
+    }
+}</script>
+</html>
