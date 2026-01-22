@@ -147,13 +147,22 @@ opacity:17%;
 }
 .textsizeXX {
     font-size: 40px;
+    
 }
 .textcolorBlack{
     color:black;
 }
+.colorinherit
+{
+    color: inherit; } 
 
 .opacity30
 {
     opacity: 30%;
 
+}
+
+.textunderline
+{
+    text-decoration: underline;
 }
