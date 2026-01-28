@@ -1,0 +1,1 @@
+Sorry! Ik had last met FileZilla, helaas kan ik mijn website niet online zetten.<img width="609" height="393" alt="image" src="https://github.com/user-attachments/assets/d4ff84e1-4037-4f73-b22b-d0593ea053f8" />
