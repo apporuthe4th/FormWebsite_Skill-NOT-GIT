@@ -27,7 +27,7 @@ body {
   text-align: center;
   margin-left: 2.5vw;
   right: 1;
-  width: 16vw;
+  width: 15.5vw;
   height: 100vh;
   z-index: 1;
   li {
@@ -217,8 +217,10 @@ body {
 #LeftMenu
 {
 display: inline-block;
-margin: 150px 0px;
-
+width: 14vw;
+margin: 250px 0px;
+border-radius: 10px;
+height: 270px;
 }
 
 a {
@@ -356,7 +358,16 @@ cursor: pointer;
 {
 
     position: relative;
-    top: -30%;
+    top: -420px;
+}
+
+.opacity
+{
+  opacity: 95%;
+}
+.background-color
+{
+ background-color: rgba(40, 75, 87, 1);
 }
 /* REUSEABLE PANELS */
 .inner-panel

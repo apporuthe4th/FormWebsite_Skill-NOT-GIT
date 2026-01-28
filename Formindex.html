@@ -14,12 +14,12 @@
 </head>
 
 <body>
-  <div class="side-left ">
+  <div class="side-left opacity ">
     <span>
-      <div class="large-text textwhite" data-highlight="true">
-             <a class="fontweight500 ZIndex-3 textunderline" id="LeftMenu">MENU</a>
+      <div class="large-text textwhite " data-highlight="true">
+             <a class="fontweight500 ZIndex-3 textunderline panel--transparent" id="LeftMenu">MENU</a>
             
-              <ul class="biggertext padding5 ZIndex-3 marginCenter up30relative cursor "><a class="colorinherit" href="">Personal</a></ul>
+              <ul class="biggertext padding5 ZIndex-3 marginCenter up30relative cursor "><a class="colorinherit" href="shitsite\index.html">Personal</a></ul>
               <ul class="biggertext padding5 ZIndex-3 marginCenter up30relative cursor "><a class="colorinherit" href="Grid\Gridindex.html">GRID</a></ul>
               <ul class="biggertext padding5 ZIndex-3 marginCenter up30relative cursor "><a class="colorinherit" href="">Minecraft</a></ul>
             
@@ -159,4 +159,43 @@
     </div>
   </div>
   <img id="teylersBG" class="ZIndex-0" src="image\mylifeisalie.jpg" alt="teylers" />
+
+  <script type="module">
+    import emailjs from 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/+esm';
+    
+    emailjs.init('_ZfE5YSOOaJY90tfj');
+
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Collect form data
+      const formData = new FormData(this);
+      const templateParams = {
+        to_email: formData.get('email'),
+        from_name: formData.get('name'),
+        name: formData.get('name'),
+        gender: formData.get('gender'),
+        email: formData.get('email'),
+        newsletter: formData.get('newsletter') ? 'Yes' : 'No',
+        contact_method: formData.get('contact-method'),
+        message: formData.get('message')
+      };
+
+      // Validate required fields
+      if (!templateParams.name || !templateParams.email || !templateParams.message) {
+        alert('Please fill in all required fields (Name, Email, Message)');
+        return;
+      }
+
+      // Send email using EmailJS
+      emailjs.send('service_xmllilm', 'template_xlwi3i7', templateParams)
+        .then(function(response) {
+          alert('Message sent successfully! Thank you for contacting us.');
+          document.getElementById('contact-form').reset();
+        }, function(error) {
+          console.error('Failed to send email:', error);
+          alert('Error: ' + (error.text || error.message || 'Unknown error. Check console for details.'));
+        });
+    });
+  </script>
 </body>
